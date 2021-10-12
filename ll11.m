@@ -1,0 +1,13 @@
+x=randn(1,1000);
+a=0.9;
+sigma=0.5;
+y=exp(x);
+m=exp(1/2);
+o=(exp(1)-1)*exp(1);
+R=xcorr(y);
+figure(1);
+subplot(2,1,1);plot(y);
+grid on;
+subplot(2,1,2);
+plot(R);
+grid on;
